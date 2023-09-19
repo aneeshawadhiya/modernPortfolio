@@ -171,16 +171,4 @@ var tl4 = gsap.timeline({
     backgroundColor: "white",
   });
 
-// window.addEventListener("load", function () {
-//   // Check if the screen width is greater than a specific threshold (e.g., 768px for tablets)
-//   if (window.innerWidth < 768) {
-//     // var desktopMessage = document.getElementById('desktop-message');
-//     // desktopMessage.style.display = 'block';
 
-    
-//   } else {
-    
-
-
-//   }
-// });
