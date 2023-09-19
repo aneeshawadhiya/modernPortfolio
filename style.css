@@ -198,22 +198,24 @@ body {
 .page2-left {
   /* background-color: blue; */
   width: 100%;
+  color: white;
   line-height: 3rem;
 }
 .page2-right {
   /* background-color: blue; */
+  color: white;
   width: 100%;
 }
 .page2-left h2 {
   font-size: 2vw;
   font-weight: 300;
-  color: #111;
+  color: #000000;
   line-height: 3vw;
   
 }
 .page2-right p {
   font-size: 28px;
-  color: #111;
+  color: #000000;
 }
 .page2-right button {
   width: 100%;
@@ -221,7 +223,7 @@ body {
   border: none;
   padding: 4px 0;
   background-color: #edbfff;
-  color: #111;
+  color: #000000;
   margin-top: 20px;
 }
 
@@ -279,6 +281,8 @@ body {
 .techStackList {
   text-align: center;
   display: flex;
+  width: 20rem;
+ 
   justify-content: center;
   flex-direction: column;
   align-items: center;
@@ -339,7 +343,7 @@ body {
 
 .elem:hover h1 {
   transform: translateY(-100%);
-  color: #11ff00;
+  color: #11ff00 !important;
 }
 .elem:hover img {
   opacity: 1;
@@ -398,6 +402,18 @@ footer {
   z-index: 9999; /* Ensure it's on top of other elements */
 }
 
+
+
+.avatarSection{
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  position: absolute;
+  right: 0;
+  
+  top: -30px;
+}
+
 /* FROM HERE WE WILL DESIGN IT TO BE RESPONSIVE */
 
 /* Mobile Styles */
@@ -436,7 +452,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: #11ff00;
+    
     height: 100vh;
     align-items: center;
     width: 100%;
@@ -472,7 +488,44 @@ footer {
 }
 
 /* Tablet Styles */
-@media screen and (min-width: 481px) and (max-width: 1024px) {
+@media screen and (min-width: 400px) and (max-width: 1024px) {
+
+.avatarSection{
+  left: 50%;
+  top:100%;
+  width: 100%;
+  transform: translate(-50%,-50%);
+}
+
+.page4{
+  margin-top: 20rem;
+}
+
+  .page1{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-self: center;
+    justify-content:space-evenly ;
+
+  }
+
+  .page1 p{
+    margin-left: 3rem;
+  }
+
+  .page1 h1{
+    font-size: 2rem;
+    left:0;
+    margin-left: 6rem;
+  }
+
+  .page2{
+    margin-top: 25rem;
+  }
+
+
+
     .page2-container{
         width: 100%;
         display: flex;
