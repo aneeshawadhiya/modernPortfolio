@@ -384,13 +384,14 @@ margin-left: 6rem;
   overflow: hidden;
 }
 .elem h1 {
+  line-height: 5rem;
   font-size: 4vw;
   font-weight: 600;
   transition: all ease-out 0.5s;
 }
 
 .elem:hover h1 {
-  transform: translateY(-100%);
+  transform: translateY(-110%);
   color: #11ff00 !important;
 }
 .elem:hover img {
@@ -517,7 +518,7 @@ footer {
 
 
 /* Tablet Styles */
-@media screen and (min-width: 400px) and (max-width: 1024px) {
+@media screen and (min-width: 340px) and (max-width: 724px) {
 
   .page2-container{
     width: 100%;
