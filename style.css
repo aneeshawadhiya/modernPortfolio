@@ -56,6 +56,50 @@ body {
   background-size: cover;
   mix-blend-mode: difference;
 }
+
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000; 
+  display: flex;
+  color:white;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; 
+}
+
+
+
+.loading-text {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: 600;
+  color:rgb(140, 140, 140);
+}
+
+.loading-text span {
+  display: none;
+  color:white;
+  animation: fadeInOut 2s ease-in-out infinite;
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 1;
+  }
+}
+
+
 .main {
   background-color: #0f0d0d;
   cursor: none;
@@ -217,7 +261,7 @@ body {
   font-size: 28px;
   color: #000000;
 }
-.page2-right button {
+/* .page2-right button {
   width: 100%;
   border-radius: 50px;
   border: none;
@@ -225,7 +269,7 @@ body {
   background-color: #edbfff;
   color: #000000;
   margin-top: 20px;
-}
+} */
 
 .artist:hover {
   color: rgb(90, 90, 90);
@@ -286,6 +330,10 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+
+.techStackListRight{
+margin-left: 6rem;
 }
 
 .workContent {
@@ -399,6 +447,71 @@ footer {
   
   top: -30px;
 }
+
+.button {
+  --main-focus: #2d8cf0;
+  --font-color: #323232;
+  --bg-color-sub: #dedede;
+  --bg-color: #eee;
+  --main-color: #323232;
+  position: relative;
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  
+  border: 2px solid var(--main-color);
+  box-shadow: 4px 4px var(--main-color);
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.button, .button__icon, .button__text {
+  transition: all 0.3s;
+}
+
+.button .button__text {
+  transform: translateX(22px);
+  color: var(--font-color);
+  font-weight: 600;
+}
+
+.button .button__icon {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 39px;
+  background-color: var(--bg-color-sub);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button .svg {
+  width: 20px;
+  fill: var(--main-color);
+}
+
+.button:hover {
+  background: var(--bg-color);
+}
+
+.button:hover .button__text {
+  color: transparent;
+}
+
+.button:hover .button__icon {
+  width: 100%;
+  transform: translateX(0);
+}
+
+.button:active {
+  transform: translate(3px, 3px);
+  box-shadow: 0px 0px var(--main-color);
+}
+
 
 /* FROM HERE WE WILL DESIGN IT TO BE RESPONSIVE */
 

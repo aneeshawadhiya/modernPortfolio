@@ -172,3 +172,22 @@ var tl4 = gsap.timeline({
   });
 
 
+  
+  document.getElementById("downloadButton").addEventListener("click", function() {
+    
+    var cvLink = "https://drive.google.com/uc?export=download&id=14BBRPsSXEiOeek3Xl7c2cParDIkN3J0O";
+    
+    var downloadLink = document.createElement("a");
+    downloadLink.href = cvLink;
+    downloadLink.target = "_blank"; 
+    downloadLink.download = "AneeshAwadhiyaCV-SDE.pdf";
+    
+    downloadLink.click();
+});
+
+
+window.onload = function () {
+    document.getElementById("preloader").style.display = "none";
+    
+    document.getElementById("main-content").style.display = "block";
+};
