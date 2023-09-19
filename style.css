@@ -416,79 +416,60 @@ footer {
 
 /* FROM HERE WE WILL DESIGN IT TO BE RESPONSIVE */
 
-/* Mobile Styles */
-@media screen and (max-width: 480px) {
-    
-    .page2-container{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
-    .page2-left {
-        /* background-color: blue; */
-        width: 100%;
-      }
-      .page2-right {
-        /* background-color: blue; */
-        width: 100%;
-      }
-
-      .page2-left h2 {
-        font-size: 2vw;
-        font-weight: 300;
-        color: #111;
-        line-height: 1vw;
-      }
-
-      .page2-right p {
-        font-size: 2vw;
-        color: #111;
-      }
-
-  
-  .page1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    
-    height: 100vh;
-    align-items: center;
-    width: 100%;
-    position: relative;
-    z-index: 9;
-    padding-top: 12vw;
-  }
-
-  .page1 h1 {
-    font-size: 6vw;
-    font-weight: 600;
-    font-family: PP mori;
-  }
-
-  .page1 p {
-    font-size: 2vw;
-    font-weight: 300;
-    font-family: PP mori;
-  }
-
-  .page1 h2 {
-    font-size: 6vw;
-    font-weight: 600;
-  }
-
-  .page1 video {
-    width: 60%;
-    margin-top: 10vw;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0);
-  }
-}
 
 /* Tablet Styles */
 @media screen and (min-width: 400px) and (max-width: 1024px) {
+
+  .page2-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.page2-left {
+    /* background-color: blue; */
+    width: 100%;
+  }
+  .page2-right {
+    /* background-color: blue; */
+    width: 100%;
+  }
+
+  .page2-left h2 {
+    font-size: 2vw;
+    font-weight: 300;
+    color: #111;
+    line-height: 1vw;
+  }
+
+  .page2-right p {
+    font-size: 2vw;
+    color: #111;
+  }
+
+
+
+.page1{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-self: center;
+  justify-content:space-evenly ;
+
+}
+
+.page1 p{
+  margin-left: 3rem;
+}
+
+.page1 h1{
+  font-size: 2rem;
+  left:0;
+  margin-left: 6rem;
+}
+
+  
 
 .avatarSection{
   left: 50%;
