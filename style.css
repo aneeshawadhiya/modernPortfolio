@@ -261,15 +261,7 @@ body {
   font-size: 28px;
   color: #000000;
 }
-/* .page2-right button {
-  width: 100%;
-  border-radius: 50px;
-  border: none;
-  padding: 4px 0;
-  background-color: #edbfff;
-  color: #000000;
-  margin-top: 20px;
-} */
+
 
 .artist:hover {
   color: rgb(90, 90, 90);
@@ -500,7 +492,7 @@ footer {
 }
 
 .button:hover .button__text {
-  color: transparent;
+  /* color: transparent; */
 }
 
 .button:hover .button__icon {
