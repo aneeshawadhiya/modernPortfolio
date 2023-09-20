@@ -121,7 +121,7 @@ gsap.from(".page1 h1,.page1 h2", {
       // markers:true,
       start: "top -115%",
       end: "top -120%",
-      scrub: 3,
+      scrub: 1,
     },
   });
   tl2.to(".main", {
@@ -135,7 +135,7 @@ gsap.from(".page1 h1,.page1 h2", {
       // markers:true,
       start: "top -280%",
       end: "top -300%",
-      scrub: 3,
+      scrub: 1,
     },
   });
 
@@ -161,15 +161,19 @@ var tl4 = gsap.timeline({
       trigger: ".page2 h1",
       scroller: ".main",
       // markers:true,
-      start: "top -280%",
+      start: "top -300%",
       end: "top -400%",
-      scrub: 3,
+      scrub: 1,
     },
   });
 
   tl4.to(".main", {
     backgroundColor: "white",
-  });
+  },"page6");
+
+  tl4.to(".scrollText",{
+    left:"-100%",
+  },"page6");
 
 
   
@@ -188,9 +192,18 @@ var tl4 = gsap.timeline({
 
 window.onload = function () {
     document.getElementById("preloader").style.display = "none";
+    
+// // Check the screen width
+// const screenWidth = window.innerWidth || document.documentElement.clientWidth;
 
-    
-    
+
+//     if(screenWidth < 800){
+//         document.getElementById("screenBlock").style.display = "block";
+//     }
+//     else{
+//         document.getElementById("screenBlock").style.display = "none";
+//     }
+
     document.getElementById("main-content").style.display = "block";
 
     
