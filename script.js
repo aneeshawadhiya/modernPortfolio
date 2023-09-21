@@ -44,13 +44,16 @@ document.addEventListener("mousemove", function (dets) {
 });
 
 var boxes = document.querySelectorAll(".box");
+
+
 boxes.forEach(function (elem) {
   elem.addEventListener("mouseenter", function () {
     var att = elem.getAttribute("data-image");
     crsr.style.width = "470px";
     crsr.style.height = "370px";
-    crsr.style.borderRadius = "0";
+    crsr.style.borderRadius = "5rem";
     crsr.style.backgroundImage = `url(${att})`;
+    boxes.style.backgroundColor = "#ffffff";
   });
   elem.addEventListener("mouseleave", function () {
     elem.style.backgroundColor = "transparent";
@@ -60,6 +63,10 @@ boxes.forEach(function (elem) {
     crsr.style.backgroundImage = `none`;
   });
 });
+
+
+
+
 
 var h4 = document.querySelectorAll("#nav h4");
 var purple = document.querySelector("#purple");
@@ -167,27 +174,29 @@ var tl4 = gsap.timeline({
     },
   });
 
-  tl4.to(".main", {
-    backgroundColor: "white",
-  },"page6");
+//   tl4.to(".main", {
+//     backgroundColor: "white",
+//   },"page6");
 
   tl4.to(".scrollText",{
     left:"-100%",
   },"page6");
 
 
+  var downloadButtons = document.querySelectorAll(".downloadButton");
+
   
-  document.getElementById("downloadButton").addEventListener("click", function() {
-    
-    var cvLink = "https://drive.google.com/uc?export=download&id=14BBRPsSXEiOeek3Xl7c2cParDIkN3J0O";
-    
-    var downloadLink = document.createElement("a");
-    downloadLink.href = cvLink;
-    downloadLink.target = "_blank"; 
-    downloadLink.download = "AneeshAwadhiyaCV-SDE.pdf";
-    
-    downloadLink.click();
+  downloadButtons.forEach(function(button) {
+    button.addEventListener("click", function() {
+        var cvLink = "https://drive.google.com/uc?export=download&id=14BBRPsSXEiOeek3Xl7c2cParDIkN3J0O";
+        var downloadLink = document.createElement("a");
+        downloadLink.href = cvLink;
+        downloadLink.target = "_blank"; 
+        downloadLink.download = "AneeshAwadhiyaCV-SDE.pdf";
+        downloadLink.click();
+    });
 });
+
 
 
 window.onload = function () {
@@ -208,3 +217,20 @@ window.onload = function () {
 
     
 };
+
+
+
+var thankyouText = document.getElementById("#thankyou");
+
+
+thankyouText.addEventListener("mouseover", function () {
+    crsr.style.width = "5rem";
+    crsr.style.height = "5rem";
+    crsr.style.transform = "translate(-50%, -50%)";
+  });
+
+  thankyouText.addEventListener("mouseout", function () {
+    crsr.style.width = "20px";
+    crsr.style.height = "20px";
+    crsr.style.transform = "translate(-50%, -50%)";
+  });
