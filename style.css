@@ -193,7 +193,7 @@ backdrop-filter: blur( 10.5px );
   padding: 0 30px;
   position: fixed;
   mix-blend-mode: difference;
-  z-index: 102;
+  z-index: 1000;
 }
 #nav img {
   height: 27px;
